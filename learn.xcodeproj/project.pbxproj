@@ -12,26 +12,9 @@
 		979C977E22B49A3B00EFB8F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 979C977D22B49A3B00EFB8F8 /* Assets.xcassets */; };
 		979C978122B49A3B00EFB8F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979C977F22B49A3B00EFB8F8 /* LaunchScreen.storyboard */; };
 		979C978422B49A3B00EFB8F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 979C978322B49A3B00EFB8F8 /* main.m */; };
-		979C978E22B49A3B00EFB8F8 /* learnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 979C978D22B49A3B00EFB8F8 /* learnTests.m */; };
-		979C979922B49A3B00EFB8F8 /* learnUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 979C979822B49A3B00EFB8F8 /* learnUITests.m */; };
+		979C97CE22B670FC00EFB8F8 /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 979C97CD22B670FC00EFB8F8 /* icon.bundle */; };
+		979C97CF22B670FC00EFB8F8 /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 979C97CD22B670FC00EFB8F8 /* icon.bundle */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		979C978A22B49A3B00EFB8F8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 979C976922B49A3A00EFB8F8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 979C977022B49A3A00EFB8F8;
-			remoteInfo = learn;
-		};
-		979C979522B49A3B00EFB8F8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 979C976922B49A3A00EFB8F8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 979C977022B49A3A00EFB8F8;
-			remoteInfo = learn;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		979C977122B49A3A00EFB8F8 /* learn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learn.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,12 +26,14 @@
 		979C978022B49A3B00EFB8F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		979C978222B49A3B00EFB8F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		979C978322B49A3B00EFB8F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		979C978922B49A3B00EFB8F8 /* learnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = learnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		979C978D22B49A3B00EFB8F8 /* learnTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = learnTests.m; sourceTree = "<group>"; };
 		979C978F22B49A3B00EFB8F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		979C979422B49A3B00EFB8F8 /* learnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = learnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		979C979822B49A3B00EFB8F8 /* learnUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = learnUITests.m; sourceTree = "<group>"; };
 		979C979A22B49A3B00EFB8F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		979C97BF22B66BC600EFB8F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		979C97C722B66F4000EFB8F8 /* icon.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = icon.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		979C97C922B66F4000EFB8F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		979C97CD22B670FC00EFB8F8 /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,14 +44,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		979C978622B49A3B00EFB8F8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		979C979122B49A3B00EFB8F8 /* Frameworks */ = {
+		979C97C422B66F4000EFB8F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -82,6 +60,8 @@
 				979C977322B49A3A00EFB8F8 /* learn */,
 				979C978C22B49A3B00EFB8F8 /* learnTests */,
 				979C979722B49A3B00EFB8F8 /* learnUITests */,
+				979C97BE22B66BC600EFB8F8 /* icon */,
+				979C97C822B66F4000EFB8F8 /* icon */,
 				979C977222B49A3A00EFB8F8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,8 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				979C977122B49A3A00EFB8F8 /* learn.app */,
-				979C978922B49A3B00EFB8F8 /* learnTests.xctest */,
-				979C979422B49A3B00EFB8F8 /* learnUITests.xctest */,
+				979C97C722B66F4000EFB8F8 /* icon.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +78,7 @@
 		979C977322B49A3A00EFB8F8 /* learn */ = {
 			isa = PBXGroup;
 			children = (
+				979C97CD22B670FC00EFB8F8 /* icon.bundle */,
 				979C977422B49A3A00EFB8F8 /* AppDelegate.h */,
 				979C977522B49A3A00EFB8F8 /* AppDelegate.m */,
 				979C977722B49A3A00EFB8F8 /* ViewController.h */,
@@ -129,6 +109,22 @@
 			path = learnUITests;
 			sourceTree = "<group>";
 		};
+		979C97BE22B66BC600EFB8F8 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				979C97BF22B66BC600EFB8F8 /* Info.plist */,
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
+		979C97C822B66F4000EFB8F8 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				979C97C922B66F4000EFB8F8 /* Info.plist */,
+			);
+			path = icon;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,41 +145,22 @@
 			productReference = 979C977122B49A3A00EFB8F8 /* learn.app */;
 			productType = "com.apple.product-type.application";
 		};
-		979C978822B49A3B00EFB8F8 /* learnTests */ = {
+		979C97C622B66F4000EFB8F8 /* icon */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 979C97A022B49A3B00EFB8F8 /* Build configuration list for PBXNativeTarget "learnTests" */;
+			buildConfigurationList = 979C97CA22B66F4000EFB8F8 /* Build configuration list for PBXNativeTarget "icon" */;
 			buildPhases = (
-				979C978522B49A3B00EFB8F8 /* Sources */,
-				979C978622B49A3B00EFB8F8 /* Frameworks */,
-				979C978722B49A3B00EFB8F8 /* Resources */,
+				979C97C322B66F4000EFB8F8 /* Sources */,
+				979C97C422B66F4000EFB8F8 /* Frameworks */,
+				979C97C522B66F4000EFB8F8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				979C978B22B49A3B00EFB8F8 /* PBXTargetDependency */,
 			);
-			name = learnTests;
-			productName = learnTests;
-			productReference = 979C978922B49A3B00EFB8F8 /* learnTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		979C979322B49A3B00EFB8F8 /* learnUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 979C97A322B49A3B00EFB8F8 /* Build configuration list for PBXNativeTarget "learnUITests" */;
-			buildPhases = (
-				979C979022B49A3B00EFB8F8 /* Sources */,
-				979C979122B49A3B00EFB8F8 /* Frameworks */,
-				979C979222B49A3B00EFB8F8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				979C979622B49A3B00EFB8F8 /* PBXTargetDependency */,
-			);
-			name = learnUITests;
-			productName = learnUITests;
-			productReference = 979C979422B49A3B00EFB8F8 /* learnUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			name = icon;
+			productName = icon;
+			productReference = 979C97C722B66F4000EFB8F8 /* icon.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -197,13 +174,8 @@
 					979C977022B49A3A00EFB8F8 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
-					979C978822B49A3B00EFB8F8 = {
+					979C97C622B66F4000EFB8F8 = {
 						CreatedOnToolsVersion = 10.2.1;
-						TestTargetID = 979C977022B49A3A00EFB8F8;
-					};
-					979C979322B49A3B00EFB8F8 = {
-						CreatedOnToolsVersion = 10.2.1;
-						TestTargetID = 979C977022B49A3A00EFB8F8;
 					};
 				};
 			};
@@ -221,8 +193,7 @@
 			projectRoot = "";
 			targets = (
 				979C977022B49A3A00EFB8F8 /* learn */,
-				979C978822B49A3B00EFB8F8 /* learnTests */,
-				979C979322B49A3B00EFB8F8 /* learnUITests */,
+				979C97C622B66F4000EFB8F8 /* icon */,
 			);
 		};
 /* End PBXProject section */
@@ -234,20 +205,15 @@
 			files = (
 				979C978122B49A3B00EFB8F8 /* LaunchScreen.storyboard in Resources */,
 				979C977E22B49A3B00EFB8F8 /* Assets.xcassets in Resources */,
+				979C97CE22B670FC00EFB8F8 /* icon.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		979C978722B49A3B00EFB8F8 /* Resources */ = {
+		979C97C522B66F4000EFB8F8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		979C979222B49A3B00EFB8F8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				979C97CF22B670FC00EFB8F8 /* icon.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,36 +230,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		979C978522B49A3B00EFB8F8 /* Sources */ = {
+		979C97C322B66F4000EFB8F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				979C978E22B49A3B00EFB8F8 /* learnTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		979C979022B49A3B00EFB8F8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				979C979922B49A3B00EFB8F8 /* learnUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		979C978B22B49A3B00EFB8F8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 979C977022B49A3A00EFB8F8 /* learn */;
-			targetProxy = 979C978A22B49A3B00EFB8F8 /* PBXContainerItemProxy */;
-		};
-		979C979622B49A3B00EFB8F8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 979C977022B49A3A00EFB8F8 /* learn */;
-			targetProxy = 979C979522B49A3B00EFB8F8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		979C977F22B49A3B00EFB8F8 /* LaunchScreen.storyboard */ = {
@@ -430,6 +374,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = none.learn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -447,83 +392,52 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = none.learn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		979C97A122B49A3B00EFB8F8 /* Debug */ = {
+		979C97CB22B66F4000EFB8F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = NO;
+				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = 7BMB397Q52;
-				INFOPLIST_FILE = learnTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = none.learnTests;
+				INFOPLIST_FILE = icon/Info.plist;
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = none.icon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/learn.app/learn";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
-		979C97A222B49A3B00EFB8F8 /* Release */ = {
+		979C97CC22B66F4000EFB8F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
 				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = NO;
+				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = 7BMB397Q52;
-				INFOPLIST_FILE = learnTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = none.learnTests;
+				INFOPLIST_FILE = icon/Info.plist;
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = none.icon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/learn.app/learn";
-			};
-			name = Release;
-		};
-		979C97A422B49A3B00EFB8F8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7BMB397Q52;
-				INFOPLIST_FILE = learnUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = none.learnUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = learn;
-			};
-			name = Debug;
-		};
-		979C97A522B49A3B00EFB8F8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7BMB397Q52;
-				INFOPLIST_FILE = learnUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = none.learnUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = learn;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -548,20 +462,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		979C97A022B49A3B00EFB8F8 /* Build configuration list for PBXNativeTarget "learnTests" */ = {
+		979C97CA22B66F4000EFB8F8 /* Build configuration list for PBXNativeTarget "icon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				979C97A122B49A3B00EFB8F8 /* Debug */,
-				979C97A222B49A3B00EFB8F8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		979C97A322B49A3B00EFB8F8 /* Build configuration list for PBXNativeTarget "learnUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				979C97A422B49A3B00EFB8F8 /* Debug */,
-				979C97A522B49A3B00EFB8F8 /* Release */,
+				979C97CB22B66F4000EFB8F8 /* Debug */,
+				979C97CC22B66F4000EFB8F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

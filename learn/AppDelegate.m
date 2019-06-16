@@ -24,20 +24,26 @@
     UIViewController *newsViewController = [[UIViewController alloc] init];
     newsViewController.view.backgroundColor = [UIColor redColor];
     newsViewController.tabBarItem.title = @"新闻";
-    // newsViewController.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/page@2x.png"];
-    // newsViewController.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/page_selected@2x.png"];
+    newsViewController.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/page@2x.png"];
+    newsViewController.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/page_selected@2x.png"];
     
     UIViewController *videoController = [[UIViewController alloc]init];
     videoController.view.backgroundColor = [UIColor yellowColor];
     videoController.tabBarItem.title = @"视频";
+    videoController.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/video@2x.png"];
+    videoController.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/video_selected@2x.png"];
 
     UIViewController *recommendController = [[UIViewController alloc]init];
     recommendController.view.backgroundColor = [UIColor greenColor];
     recommendController.tabBarItem.title = @"推荐";
+    recommendController.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/like@2x.png"];
+    recommendController.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/like_selected@2x.png"];
 
     UIViewController *mineViewController = [[UIViewController alloc]init];
     mineViewController.view.backgroundColor = [UIColor lightGrayColor];
     mineViewController.tabBarItem.title = @"我的";
+    mineViewController.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/home@2x.png"];
+    mineViewController.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/home_selected@2x.png"];
 
     [tabbarController setViewControllers:@[newsViewController,videoController,recommendController,mineViewController]];    
     self.window.rootViewController = tabbarController;
