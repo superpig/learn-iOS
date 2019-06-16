@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,11 +22,14 @@
     
     UITabBarController *tabbarController = [[UITabBarController alloc] init];
     
-    UIViewController *newsViewController = [[UIViewController alloc] init];
-    newsViewController.view.backgroundColor = [UIColor redColor];
-    newsViewController.tabBarItem.title = @"新闻";
-    newsViewController.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/page@2x.png"];
-    newsViewController.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/page_selected@2x.png"];
+    ViewController *viewController = [[ViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    
+//    UIViewController *newsViewController = [[UIViewController alloc] init];
+//    newsViewController.view.backgroundColor = [UIColor redColor];
+    navigationController.tabBarItem.title = @"新闻";
+    navigationController.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/page@2x.png"];
+    navigationController.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/page_selected@2x.png"];
     
     UIViewController *videoController = [[UIViewController alloc]init];
     videoController.view.backgroundColor = [UIColor yellowColor];
@@ -45,7 +49,7 @@
     mineViewController.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/home@2x.png"];
     mineViewController.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/home_selected@2x.png"];
 
-    [tabbarController setViewControllers:@[newsViewController,videoController,recommendController,mineViewController]];    
+    [tabbarController setViewControllers:@[navigationController,videoController,recommendController,mineViewController]];    
     self.window.rootViewController = tabbarController;
     [self.window makeKeyAndVisible];
     return YES;
