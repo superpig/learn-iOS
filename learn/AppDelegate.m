@@ -17,6 +17,31 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    UITabBarController *tabbarController = [[UITabBarController alloc] init];
+    
+    UIViewController *newsViewController = [[UIViewController alloc] init];
+    newsViewController.view.backgroundColor = [UIColor redColor];
+    newsViewController.tabBarItem.title = @"新闻";
+    // newsViewController.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/page@2x.png"];
+    // newsViewController.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/page_selected@2x.png"];
+    
+    UIViewController *videoController = [[UIViewController alloc]init];
+    videoController.view.backgroundColor = [UIColor yellowColor];
+    videoController.tabBarItem.title = @"视频";
+
+    UIViewController *recommendController = [[UIViewController alloc]init];
+    recommendController.view.backgroundColor = [UIColor greenColor];
+    recommendController.tabBarItem.title = @"推荐";
+
+    UIViewController *mineViewController = [[UIViewController alloc]init];
+    mineViewController.view.backgroundColor = [UIColor lightGrayColor];
+    mineViewController.tabBarItem.title = @"我的";
+
+    [tabbarController setViewControllers:@[newsViewController,videoController,recommendController,mineViewController]];    
+    self.window.rootViewController = tabbarController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
