@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 
-@interface AppDelegate ()
+@interface AppDelegate ()<UITabBarControllerDelegate>
 
 @end
 
@@ -49,11 +49,20 @@
 
     [tabbarController setViewControllers:@[viewController,videoController,recommendController,mineViewController]];
     
+    tabbarController.delegate = self;
+    
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tabbarController];
+    
+    
 
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+    NSLog(@"did select");
 }
 
 
