@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "GTVideoViewController.h"
+#import "GTRecommendViewController.h"
 
 @interface AppDelegate ()<UITabBarControllerDelegate>
 
@@ -31,14 +32,8 @@
     viewController.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/page_selected@2x.png"];
     
     GTVideoViewController *videoController = [[GTVideoViewController alloc]init];
-//    videoController.view.backgroundColor = [UIColor yellowColor];
-    
 
-    UIViewController *recommendController = [[UIViewController alloc]init];
-    recommendController.view.backgroundColor = [UIColor greenColor];
-    recommendController.tabBarItem.title = @"推荐";
-    recommendController.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/like@2x.png"];
-    recommendController.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/like_selected@2x.png"];
+    GTRecommendViewController *recommendController = [[GTRecommendViewController alloc]init];
 
     UIViewController *mineViewController = [[UIViewController alloc]init];
     mineViewController.view.backgroundColor = [UIColor lightGrayColor];
