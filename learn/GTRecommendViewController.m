@@ -8,7 +8,7 @@
 
 #import "GTRecommendViewController.h"
 
-@interface GTRecommendViewController ()
+@interface GTRecommendViewController () <UIScrollViewDelegate>
 
 @end
 
@@ -31,6 +31,7 @@
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
     scrollView.backgroundColor = [UIColor lightGrayColor];
     scrollView.contentSize = CGSizeMake(self.view.bounds.size.width * 5, self.view.bounds.size.height);
+    scrollView.delegate = self;
     
     NSArray *colorList = @[[UIColor redColor], [UIColor yellowColor], [UIColor blueColor], [UIColor lightGrayColor], [UIColor grayColor]];
     for (int i = 0; i < [colorList count]; i++) {
@@ -40,9 +41,29 @@
             view;
         })];
     }
-    scrollView.pagingEnabled = YES;
-    scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+//    scrollView.pagingEnabled = YES;
+//    scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     [self.view addSubview:scrollView];
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+//    NSLog(@"start drag");
+}
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    NSLog(@"start drag");
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    NSLog(@"end drag");
+}
+
+- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView {
+    
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    
 }
 
 @end
