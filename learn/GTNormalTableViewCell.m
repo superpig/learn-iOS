@@ -16,6 +16,7 @@
 @property(nonatomic, strong, readwrite) UILabel *timeLabel;
 
 @property(nonatomic, strong, readwrite) UIImageView *rightImageView;
+@property(nonatomic, strong, readwrite) UIButton *deleteButton;
 
 @end
 
@@ -25,7 +26,7 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         [self.contentView addSubview:({
-            self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 15, 270, 50)];
+            self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 15, 300, 50)];
             self.titleLabel.font = [UIFont systemFontOfSize:16];
             self.titleLabel.textColor = [UIColor blackColor];
             self.titleLabel;
@@ -54,10 +55,18 @@
         })];
         
         [self.contentView addSubview:({
-            self.rightImageView = [[UIImageView alloc] initWithFrame:CGRectMake(290, 15, 70, 70)];
-            self.rightImageView.backgroundColor = [UIColor redColor];
+            self.rightImageView = [[UIImageView alloc] initWithFrame:CGRectMake(330, 15, 70, 70)];
+            self.rightImageView.backgroundColor = [UIColor grayColor];
             self.rightImageView.contentMode = UIViewContentModeScaleAspectFit;
             self.rightImageView;
+        })];
+        
+        [self.contentView addSubview:({
+            self.deleteButton = [[UIButton alloc] initWithFrame:CGRectMake(290, 80, 30, 20)];
+            [self.deleteButton setTitle:@"x" forState:UIControlStateNormal];
+            [self.deleteButton setTitle:@"v" forState:UIControlStateHighlighted];
+            self.deleteButton.backgroundColor = [UIColor blueColor];
+            self.deleteButton;
         })];
     }
     return self;
