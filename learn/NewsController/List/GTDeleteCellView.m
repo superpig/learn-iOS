@@ -2,8 +2,8 @@
 //  GTDeleteCellView.m
 //  learn
 //
-//  Created by zhuchao02 on 2019/8/31.
-//  Copyright © 2019 zhuchao02. All rights reserved.
+//  Created by superpig on 2019/8/31.
+//  Copyright © 2019 superpig. All rights reserved.
 //
 
 #import "GTDeleteCellView.h"

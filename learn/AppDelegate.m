@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  learn
 //
-//  Created by zhuchao02 on 2019/6/15.
-//  Copyright © 2019 zhuchao02. All rights reserved.
+//  Created by superpig on 2019/6/15.
+//  Copyright © 2019 superpig. All rights reserved.
 //
 
 #import "AppDelegate.h"
