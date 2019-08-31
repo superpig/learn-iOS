@@ -18,6 +18,16 @@
 
 @implementation GTDetailViewController
 
+- (instancetype) init {
+    self = [super init];
+    if (self) {
+        self.tabBarItem.title = @"新闻";
+        self.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/page@2x.png"];
+        self.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/page_selected@2x.png"];
+    }
+    return self;
+}
+
 - (void)dealloc {
     [self.webView removeObserver:self forKeyPath:@"estimatedProgress"];
 }

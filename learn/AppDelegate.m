@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "GTNewsViewController.h"
 #import "GTVideoViewController.h"
 #import "GTRecommendViewController.h"
 
@@ -23,16 +23,9 @@
      self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     UITabBarController *tabbarController = [[UITabBarController alloc] init];
-    
-    ViewController *viewController = [[ViewController alloc] init];
-//    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
-    
-    viewController.tabBarItem.title = @"新闻";
-    viewController.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/page@2x.png"];
-    viewController.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/page_selected@2x.png"];
-    
-    GTVideoViewController *videoController = [[GTVideoViewController alloc]init];
 
+    GTNewsViewController *newsController = [[GTNewsViewController alloc] init];
+    GTVideoViewController *videoController = [[GTVideoViewController alloc]init];
     GTRecommendViewController *recommendController = [[GTRecommendViewController alloc]init];
 
     UIViewController *mineViewController = [[UIViewController alloc]init];
@@ -41,14 +34,10 @@
     mineViewController.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/home@2x.png"];
     mineViewController.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/home_selected@2x.png"];
 
-    [tabbarController setViewControllers:@[viewController,videoController,recommendController,mineViewController]];
-    
+    [tabbarController setViewControllers:@[newsController,videoController,recommendController,mineViewController]];
     tabbarController.delegate = self;
     
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tabbarController];
-    
-    
-
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     return YES;

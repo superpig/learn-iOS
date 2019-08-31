@@ -1,24 +1,26 @@
 //
-//  ViewController.m
+//  GTNewsViewController.m
 //  learn
 //
 //  Created by zhuchao02 on 2019/6/15.
 //  Copyright © 2019 zhuchao02. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "GTNewsViewController.h"
 #import "GTNormalTableViewCell.h"
 #import "GTDetailViewController.h"
 #import "GTDeleteCellView.h"
 
-@interface ViewController ()<UITableViewDataSource, UITableViewDelegate, GTNormalTableViewCellDelegate>
+@interface GTNewsViewController ()<UITableViewDataSource, UITableViewDelegate, GTNormalTableViewCellDelegate>
 
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSMutableArray *dataArray;
 
 @end
 
-@implementation ViewController
+@implementation GTNewsViewController
+
+#pragma mark - life cycle
 
 - (instancetype)init {
     self = [super init];
@@ -40,6 +42,8 @@
     _tableView.delegate = self;
     [self.view addSubview:_tableView];
 }
+
+#pragma mark - tableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 100;
