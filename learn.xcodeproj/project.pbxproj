@@ -17,6 +17,7 @@
 		979C978422B49A3B00EFB8F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 979C978322B49A3B00EFB8F8 /* main.m */; };
 		979C97CE22B670FC00EFB8F8 /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 979C97CD22B670FC00EFB8F8 /* icon.bundle */; };
 		979C97CF22B670FC00EFB8F8 /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 979C97CD22B670FC00EFB8F8 /* icon.bundle */; };
+		97A4549B231A5C520032B205 /* GTDeleteCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A4549A231A5C520032B205 /* GTDeleteCellView.m */; };
 		97B7849B22F5294700DC8C77 /* GTRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B7849A22F5294700DC8C77 /* GTRecommendViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,8 @@
 		979C97C722B66F4000EFB8F8 /* icon.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = icon.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		979C97C922B66F4000EFB8F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		979C97CD22B670FC00EFB8F8 /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
+		97A45499231A5C520032B205 /* GTDeleteCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTDeleteCellView.h; sourceTree = "<group>"; };
+		97A4549A231A5C520032B205 /* GTDeleteCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTDeleteCellView.m; sourceTree = "<group>"; };
 		97B7849922F5294700DC8C77 /* GTRecommendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTRecommendViewController.h; sourceTree = "<group>"; };
 		97B7849A22F5294700DC8C77 /* GTRecommendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTRecommendViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +110,8 @@
 				976F31F923113648005E4978 /* GTNormalTableViewCell.m */,
 				9742B9802312700000FB443E /* GTDetailViewController.h */,
 				9742B9812312700000FB443E /* GTDetailViewController.m */,
+				97A45499231A5C520032B205 /* GTDeleteCellView.h */,
+				97A4549A231A5C520032B205 /* GTDeleteCellView.m */,
 			);
 			path = learn;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 				976F31FA23113648005E4978 /* GTNormalTableViewCell.m in Sources */,
 				9742B9822312700000FB443E /* GTDetailViewController.m in Sources */,
 				97B7849B22F5294700DC8C77 /* GTRecommendViewController.m in Sources */,
+				97A4549B231A5C520032B205 /* GTDeleteCellView.m in Sources */,
 				9720183022ED501F002D4841 /* GTVideoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
