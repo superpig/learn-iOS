@@ -7,10 +7,20 @@
 //
 
 #import "GTListLoader.h"
+#import <AFNetworking.h>
 
 @implementation GTListLoader
 
 - (void)loadListData {
+    
+//    [[AFHTTPSessionManager manager] GET:@"http://static001.geekbang.org/univer/classes/ios_dev/lession/45/toutiao.json" parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+//
+//    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        NSLog(@"");
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//
+//    }];
+    
     NSString *urlString = @"http://static001.geekbang.org/univer/classes/ios_dev/lession/45/toutiao.json";
     NSURL *listURL = [NSURL URLWithString:urlString];
     
@@ -18,6 +28,8 @@
     
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDataTask *dataTask = [session dataTaskWithURL:listURL completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        NSError *jsonError;
+        id jsonObj = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
         NSLog(@"");
     }];
     [dataTask resume];
