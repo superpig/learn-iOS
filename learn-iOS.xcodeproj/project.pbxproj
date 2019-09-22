@@ -29,7 +29,7 @@
 		9742B9812312700000FB443E /* GTDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTDetailViewController.m; sourceTree = "<group>"; };
 		976F31F823113648005E4978 /* GTNormalTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTNormalTableViewCell.h; sourceTree = "<group>"; };
 		976F31F923113648005E4978 /* GTNormalTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTNormalTableViewCell.m; sourceTree = "<group>"; };
-		979C977122B49A3A00EFB8F8 /* learn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		979C977122B49A3A00EFB8F8 /* learn-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "learn-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		979C977422B49A3A00EFB8F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		979C977522B49A3A00EFB8F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		979C977722B49A3A00EFB8F8 /* GTNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTNewsViewController.h; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 		979C977222B49A3A00EFB8F8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				979C977122B49A3A00EFB8F8 /* learn.app */,
+				979C977122B49A3A00EFB8F8 /* learn-iOS.app */,
 				979C97C722B66F4000EFB8F8 /* icon.bundle */,
 			);
 			name = Products;
@@ -190,9 +190,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		979C977022B49A3A00EFB8F8 /* learn */ = {
+		979C977022B49A3A00EFB8F8 /* learn-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 979C979D22B49A3B00EFB8F8 /* Build configuration list for PBXNativeTarget "learn" */;
+			buildConfigurationList = 979C979D22B49A3B00EFB8F8 /* Build configuration list for PBXNativeTarget "learn-iOS" */;
 			buildPhases = (
 				979C976D22B49A3A00EFB8F8 /* Sources */,
 				979C976E22B49A3A00EFB8F8 /* Frameworks */,
@@ -202,9 +202,9 @@
 			);
 			dependencies = (
 			);
-			name = learn;
+			name = "learn-iOS";
 			productName = learn;
-			productReference = 979C977122B49A3A00EFB8F8 /* learn.app */;
+			productReference = 979C977122B49A3A00EFB8F8 /* learn-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		979C97C622B66F4000EFB8F8 /* icon */ = {
@@ -241,7 +241,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 979C976C22B49A3A00EFB8F8 /* Build configuration list for PBXProject "learn" */;
+			buildConfigurationList = 979C976C22B49A3A00EFB8F8 /* Build configuration list for PBXProject "learn-iOS" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -254,7 +254,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				979C977022B49A3A00EFB8F8 /* learn */,
+				979C977022B49A3A00EFB8F8 /* learn-iOS */,
 				979C97C622B66F4000EFB8F8 /* icon */,
 			);
 		};
@@ -512,7 +512,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		979C976C22B49A3A00EFB8F8 /* Build configuration list for PBXProject "learn" */ = {
+		979C976C22B49A3A00EFB8F8 /* Build configuration list for PBXProject "learn-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				979C979B22B49A3B00EFB8F8 /* Debug */,
@@ -521,7 +521,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		979C979D22B49A3B00EFB8F8 /* Build configuration list for PBXNativeTarget "learn" */ = {
+		979C979D22B49A3B00EFB8F8 /* Build configuration list for PBXNativeTarget "learn-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				979C979E22B49A3B00EFB8F8 /* Debug */,

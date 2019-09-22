@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:learn.xcodeproj">
+      location = "self:/Users/hilary/TechProject/learn/learn-iOS.xcodeproj">
    </FileRef>
 </Workspace>
