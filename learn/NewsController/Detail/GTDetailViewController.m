@@ -13,6 +13,7 @@
 
 @property(nonatomic, strong, readwrite) WKWebView *webView;
 @property(nonatomic, strong, readwrite) UIProgressView *progressView;
+@property(nonatomic, strong, readwrite) NSString *acticleUrl;
 
 @end
 
@@ -20,10 +21,13 @@
 
 - (instancetype) init {
     self = [super init];
+    return self;
+}
+
+- (instancetype) initWithUrlString: (NSString *)urlString {
+    self = [super init];
     if (self) {
-        self.tabBarItem.title = @"新闻";
-        self.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/page@2x.png"];
-        self.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/page_selected@2x.png"];
+        self.acticleUrl = urlString;
     }
     return self;
 }
@@ -43,7 +47,7 @@
         self.progressView;
     })];
     self.webView.navigationDelegate = self;
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://time.geekbang.org"]]];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.acticleUrl]]];
     [self.webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
     
 }

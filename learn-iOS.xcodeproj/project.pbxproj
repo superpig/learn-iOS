@@ -93,8 +93,8 @@
 		9769FDC1231A88750021C9D8 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				979C977722B49A3A00EFB8F8 /* GTNewsViewController.h */,
-				979C977822B49A3A00EFB8F8 /* GTNewsViewController.m */,
+				9742B9802312700000FB443E /* GTDetailViewController.h */,
+				9742B9812312700000FB443E /* GTDetailViewController.m */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -191,8 +191,8 @@
 		97A460332337BF9700138AB6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9742B9802312700000FB443E /* GTDetailViewController.h */,
-				9742B9812312700000FB443E /* GTDetailViewController.m */,
+				979C977722B49A3A00EFB8F8 /* GTNewsViewController.h */,
+				979C977822B49A3A00EFB8F8 /* GTNewsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

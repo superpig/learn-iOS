@@ -15,12 +15,12 @@
 -(void)configWithDictionary:(NSDictionary *)dictionary{
 #warning 类型是否匹配
     self.category = [dictionary objectForKey:@"category"];
-    self.thumbnailUrl = [dictionary objectForKey:@"thumbnailUrl"];
+    self.thumbnailUrl = [dictionary objectForKey:@"thumbnail_pic_s"];
     self.title = [dictionary objectForKey:@"title"];
     self.date = [dictionary objectForKey:@"date"];
-    self.aticleUrl = [dictionary objectForKey:@"aticleUrl"];
+    self.aticleUrl = [dictionary objectForKey:@"url"];
     self.uniquekey = [dictionary objectForKey:@"uniquekey"];
-    self.authorName = [dictionary objectForKey:@"authorName"];
+    self.authorName = [dictionary objectForKey:@"author_name"];
 }
 
 

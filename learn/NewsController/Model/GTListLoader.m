@@ -12,7 +12,7 @@
 
 @implementation GTListLoader
 
-- (void)loadListData {
+- (void)loadListDataWithFinishBlock:(GTListLoaderFinishBlock)finishBlock {
     
 //    [[AFHTTPSessionManager manager] GET:@"http://static001.geekbang.org/univer/classes/ios_dev/lession/45/toutiao.json" parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
 //
@@ -40,7 +40,11 @@
             [resultList addObject:listItem];
         }
         
-        NSLog(@"");
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (finishBlock) {
+                finishBlock(error == nil, resultList.copy);
+            }
+        });
     }];
     [dataTask resume];
 }
